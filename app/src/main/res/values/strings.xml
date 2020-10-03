@@ -2,4 +2,6 @@
     <string name="app_name">UsingStrings</string>
     <string name="Msg1">here, message one</string>
     <string name="Msg2">here, message 2</string>
+    <string name="q1">Java was originally developed by</string>
+    <string name="a1">James Gosling</string>
 </resources>

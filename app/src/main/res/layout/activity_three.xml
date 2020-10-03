@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityThree">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="438dp"
+        android:layout_height="765dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/add" />
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ENTER DETAILS"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/q1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="411dp"
+        android:layout_height="199dp"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.153"></LinearLayout>
+
+    <EditText
+        android:id="@+id/q1"
+        android:layout_width="302dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/a2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <EditText
+        android:id="@+id/a2"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addNews"
+        android:layout_width="219dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button3"
+        android:text="ADD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a2"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button3"
+        android:text="UPDATE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNews"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="159dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edex" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

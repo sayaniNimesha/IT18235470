@@ -4,33 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".ActivityOne">
 
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="462dp"
+        android:layout_height="809dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_view_countdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:layout_marginLeft="113dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="113dp"
-        android:layout_marginRight="113dp"
-        android:text="@string/Msg1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:text="1/3"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_question"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countdown"></LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="364dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="216dp"
+        android:gravity="center_horizontal"
+        android:text="here will be question"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:layout_marginLeft="113dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="113dp"
-        android:layout_marginRight="113dp"
-        android:text="TextView"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="332dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="#E99C03"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_question" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="#E99C03"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="336dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="#E99C03"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="332dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:backgroundTint="#E99C03"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="66dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="84dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
